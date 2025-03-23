@@ -1,3 +1,44 @@
+# jamba 1.0.4
+
+## Changes per CRAN additional issues
+
+* Updated tests in `test-getColorRamp.r` due to obscure, non-reproducible
+error during automated CRAN package checks on MacOS aarch64-apple-darwin24.3.0,
+R-4.5.0 development.
+
+   * The test failed when `getColorRamp()` returning "#3333ECFF" instead of
+   "#3434ECFF" on R-4.5.0 devel version, 'test-getColorRamp.r:25:4'.
+   * The ugly workaround ignores the possibly underlying cause, which
+   resembles a rounding error with hex color values.
+   * The error was not reproducible on R-4.5.0 platform aarch64-apple-darwin20.
+
+
+# jamba 1.0.3
+
+## Changes per CRAN additional issues
+
+* 'jamba-vignette.Rmd' now uses `requireNamespace("kableExtra", quietly=TRUE)`.
+* `kable_coloring()` changed @examplesId to use
+'requireNamespace("kableExtra", quietly=TRUE)'. Apparently one platform
+(r-oldrel-macos-arm64) did not enforce the check for 'kableExtra'
+possibly due to `check_pkg_installed()` differences on that platform.
+See changes below to `check_pkg_installed()`.
+
+## Changes to existing functions
+
+* `check_pkg_installed()` was modified to provide two methods:
+
+  * "packagedir" confirms the package directory exists and contains
+  the file 'DESCRIPTION'. It is possible that that check that the
+  file exists is enough improvement over simply using `nchar()`
+  on the directory, that the checks on 'r-oldrel-macos-arm64' would
+  now succeed, however that environment is not available for testing.
+  (The development environment is already R-4.3.3 on MacOS with M1 chip,
+  though other libraries could differ with the official test system.)
+  * "requireNamespace" runs `requireNamespace(x, quietly=TRUE)` which
+  loads the package namespace but does not attach it. This approach is
+  slower, but more accurate.
+
 # jamba 1.0.2
 
 ## Changes per CRAN comments.

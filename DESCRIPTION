@@ -1,6 +1,6 @@
 Package: jamba
 Title: Just Analysis Methods Base
-Version: 1.0.2
+Version: 1.0.4
 Authors@R: c(
     person(given="James M.",
        family="Ward",
@@ -32,8 +32,8 @@ VignetteBuilder: knitr
 RoxygenNote: 7.3.2
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2025-03-07 17:13:53 UTC; wardjm
+Packaged: 2025-03-23 06:31:56 UTC; wardjm
 Author: James M. Ward [aut, cre, cph] (<https://orcid.org/0000-0002-9510-2848>)
 Maintainer: James M. Ward <jmw86069@gmail.com>
 Repository: CRAN
-Date/Publication: 2025-03-10 14:50:10 UTC
+Date/Publication: 2025-03-23 16:30:02 UTC

@@ -1,7 +1,7 @@
-25445b963b79b5c3093c5630f9cf9a4c *DESCRIPTION
+bb770360f79e7b7dd09b88826f5b0d9c *DESCRIPTION
 40ed36a13a6b72e128fd21f26d647db7 *LICENSE
 2226e7992276666ac25439de0e1f19d5 *NAMESPACE
-ffec3a5576f5f6f325dea4a82aab4de0 *NEWS.md
+824f299f0e2fc5afb3e33bb11c980402 *NEWS.md
 772657dc998289a6962c1a03a94684c0 *R/jam-calc-density.R
 efe25e94a075fe4c820fc7ae2ef5de08 *R/jam-call-fn-ellipsis.R
 1e1f3eab79e8dae5e161ac5d9a26a1c2 *R/jamba-axis.R
@@ -14,7 +14,7 @@ d44bd857dd55b23106d78947568278f5 *R/jamba-drawlabels.R
 5a456c5ac634595b1835aa40da7c8f9b *R/jamba-heatmap-order.R
 af0f35616f3df2a3e564627f19c3fc43 *R/jamba-hmcellfunlabel.R
 d2a9084aac3c1cf27601ab0314db49ae *R/jamba-imagebycolors.R
-9704b05c06f0a1d2e76b0a751b465988 *R/jamba-kable-coloring.R
+524fa20878ed210c0bde1bb4e91c1dde *R/jamba-kable-coloring.R
 39ab0b396710018c92b5c0214abeffa0 *R/jamba-lldf.R
 8d6c25c4b5f003da716551082764a8ec *R/jamba-load-cache.R
 b4ba0d3297f61590896d4e294211752c *R/jamba-middle.R
@@ -31,14 +31,14 @@ fcf36197b0cb48ff3aa9b187b9c0db43 *R/jamba-showcolors.R
 7270a9dfbf37e78807c3eefe165b0764 *R/jamba-size.R
 b275f1802c27ebfdb462993fe25c1da8 *R/jamba-string.r
 5a69b2c5d11711a6a69e5e481f491ed0 *R/jamba-styles.R
-b7a9903cef361a6792f31cb7c3eec51c *R/jamba-utils.R
+d9a06b973ced3b8751bf2bb2c712f8f0 *R/jamba-utils.R
 eac9b0d7871a263fccf6ef97c4aeb63d *R/jamba.r
 1206a94c054a0e7665f6b892d26c80ce *README.md
 b4ac0fc3069dcf5669d2ffb402d693ab *build/vignette.rds
 e87f91c7c4db2f3fbd7e3b6e15a19fad *inst/CITATION
-857c5f9c956e3bcf1409b61bf7c065a8 *inst/doc/jamba-vignette.R
-9663bc9a5d2fdedc46bd2a32da4fe4e0 *inst/doc/jamba-vignette.Rmd
-8405a68c6dcd771db779fe8abfb1d8b1 *inst/doc/jamba-vignette.html
+f058279a91729071f57b0441384e3676 *inst/doc/jamba-vignette.R
+9ab352b6ea4409203c87ff6f3100cbc4 *inst/doc/jamba-vignette.Rmd
+d877c858867bbb1f9c4eadbb1879c6ed *inst/doc/jamba-vignette.html
 47f86a9b496e392954add0b6d993f803 *man/adjustAxisLabelMargins.Rd
 1bb08cf86f27dc740996c1db4dc9f6f9 *man/alpha2col.Rd
 277728faddd31eb68639cebd358d1c18 *man/applyCLrange.Rd
@@ -52,7 +52,7 @@ bb857f6351429a7392aa359805a70ad6 *man/breakDensity.Rd
 f23f6567bad3c39503296942cb21ae9a *man/call_fn_ellipsis.Rd
 a2d57eec47227ab28b41b964e3fbe78b *man/cell_fun_label.Rd
 4570ebebf4b2107808b36de5f995b397 *man/checkLightMode.Rd
-fe8b1654566a6b241b62ff20c7d0ae4d *man/check_pkg_installed.Rd
+79661d513efc07c70c393f0e647fdba0 *man/check_pkg_installed.Rd
 2976b89cf5f203d73b75184530fa8374 *man/col2alpha.Rd
 5d4cecb083e972077b8583324b47a741 *man/col2hcl.Rd
 1b2aa67e4aba9e46df6662dc23541747 *man/col2hsl.Rd
@@ -103,7 +103,7 @@ c7ca055a163616737389ee0f0f004ba0 *man/imageByColors.Rd
 61d95a001698eb6150a55dd35c4ac12a *man/jam_rapply.Rd
 e75b1a7712299cb0561c0a5466458e78 *man/jamba-package.Rd
 4e9733f1c228b93119a028aa8eb8f16a *man/jargs.Rd
-55d1af97219fbe788522178f4743a5d2 *man/kable_coloring.Rd
+8faa9c17520604c14229dd5cbf233d92 *man/kable_coloring.Rd
 11aed3cb512a0ef77744c2d5a63b9915 *man/list2df.Rd
 b19e77c39a802996995be8b46331f8b4 *man/lldf.Rd
 d841686b9ab02e93f17b38e2489a853b *man/log2signed.Rd
@@ -180,7 +180,7 @@ c03bcd13a682cb76abae89d9e521fc5c *man/warpRamp.Rd
 4f8994e10ec3a1edb2e4acef077bd57f *tests/testthat/test-asSize.R
 c76ca36338746894614b9c692a5ec630 *tests/testthat/test-cPaste.R
 ccd0924cf16209f87492decb18eb2555 *tests/testthat/test-color2gradient.R
-56a5c2a54f15a15509c4e17aabd7b047 *tests/testthat/test-getColorRamp.R
+5f47a5a84d17ba5708beff063f7d9b42 *tests/testthat/test-getColorRamp.R
 ea4d15a663e3762f8afa2ac5ed2cbe92 *tests/testthat/test-grep.R
 c8c96fdcd4280abd7eb63033456e38d2 *tests/testthat/test-groupedAxis.R
 bc3676d8a55b94b7e52bbc5acc96d80e *tests/testthat/test-gsubs.R
@@ -194,6 +194,6 @@ d83fa3ddd0f374d2cb49da4c866dd169 *tests/testthat/test-rmRowMadOutliers.R
 43132ab75db8b0721540a06e28603310 *tests/testthat/test-rowGroupMeans.R
 404df453070f89218ab42f73af0a3e89 *tests/testthat/test-writeOpenxlsx.R
 ce8d6747a5af347d63dd4c14c719386d *vignettes/README-setPrompt.png
-9663bc9a5d2fdedc46bd2a32da4fe4e0 *vignettes/jamba-vignette.Rmd
+9ab352b6ea4409203c87ff6f3100cbc4 *vignettes/jamba-vignette.Rmd
 5c70183c22a71767511860c2a1cdc6fa *vignettes/jambaVignette-get_color_ramp-2.png
 9f61c321a9c581aedc037f5abad3dfe6 *vignettes/jambaVignette-log_fc_ticks-1.png
