@@ -18,8 +18,8 @@ case-insensitive grep
 \details{
 This function is a simple wrapper around \code{base::grep()} which
 runs in case-insensitive mode. It is mainly used to save keystrokes,
-but is consistently named alongside \code{\link{vgrep}} and
-\code{\link{vigrep}}.
+but is consistently named alongside \code{vgrep()} and
+\code{vigrep()}.
 }
 \examples{
 V <- paste0(LETTERS[1:5], LETTERS[4:8]);
@@ -29,14 +29,14 @@ vigrep("d", V);
 
 }
 \seealso{
-Other jam grep functions: 
-\code{\link{grepls}()},
-\code{\link{igrepHas}()},
-\code{\link{igrepl}()},
-\code{\link{provigrep}()},
-\code{\link{unigrep}()},
-\code{\link{unvigrep}()},
-\code{\link{vgrep}()},
-\code{\link{vigrep}()}
+Other jam grep functions:
+\code{\link[=grepls]{grepls()}},
+\code{\link[=igrepHas]{igrepHas()}},
+\code{\link[=igrepl]{igrepl()}},
+\code{\link[=provigrep]{provigrep()}},
+\code{\link[=unigrep]{unigrep()}},
+\code{\link[=unvigrep]{unvigrep()}},
+\code{\link[=vgrep]{vgrep()}},
+\code{\link[=vigrep]{vigrep()}}
 }
 \concept{jam grep functions}

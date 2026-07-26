@@ -62,7 +62,7 @@ transformation like \code{sqrt(abs(x)) * sign(x)}.
 If \code{x} is supplied, it is used to define the numeric range, otherwise
 the observed range is taken based upon \code{side}. If neither \code{x} nor \code{side}
 is supplied, or if the numeric range is empty or zero width,
-it returns \code{NULL}.
+it returns 'NULL'.
 
 The main goal of this function is to provide reasonably placed
 tick marks using integer values.
@@ -81,23 +81,23 @@ abline(h=pretty(par("usr")[3:4]), col="grey", lty="dotted")
 
 }
 \seealso{
-Other jam plot functions: 
-\code{\link{adjustAxisLabelMargins}()},
-\code{\link{coordPresets}()},
-\code{\link{decideMfrow}()},
-\code{\link{drawLabels}()},
-\code{\link{getPlotAspect}()},
-\code{\link{groupedAxis}()},
-\code{\link{imageByColors}()},
-\code{\link{imageDefault}()},
-\code{\link{minorLogTicksAxis}()},
-\code{\link{nullPlot}()},
-\code{\link{plotPolygonDensity}()},
-\code{\link{plotRidges}()},
-\code{\link{plotSmoothScatter}()},
-\code{\link{shadowText}()},
-\code{\link{shadowText_options}()},
-\code{\link{showColors}()},
-\code{\link{usrBox}()}
+Other jam plot functions:
+\code{\link[=adjustAxisLabelMargins]{adjustAxisLabelMargins()}},
+\code{\link[=coordPresets]{coordPresets()}},
+\code{\link[=decideMfrow]{decideMfrow()}},
+\code{\link[=drawLabels]{drawLabels()}},
+\code{\link[=getPlotAspect]{getPlotAspect()}},
+\code{\link[=groupedAxis]{groupedAxis()}},
+\code{\link[=imageByColors]{imageByColors()}},
+\code{\link[=imageDefault]{imageDefault()}},
+\code{\link[=minorLogTicksAxis]{minorLogTicksAxis()}},
+\code{\link[=nullPlot]{nullPlot()}},
+\code{\link[=plotPolygonDensity]{plotPolygonDensity()}},
+\code{\link[=plotRidges]{plotRidges()}},
+\code{\link[=plotSmoothScatter]{plotSmoothScatter()}},
+\code{\link[=shadowText]{shadowText()}},
+\code{\link[=shadowText_options]{shadowText_options()}},
+\code{\link[=showColors]{showColors()}},
+\code{\link[=usrBox]{usrBox()}}
 }
 \concept{jam plot functions}

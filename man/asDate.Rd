@@ -22,15 +22,15 @@ convert date DDmmmYYYY to Date
 }
 \details{
 This function converts a text date string to Date object, mainly to
-allow date-related math operations, for example \code{\link[base]{difftime}}.
+allow date-related math operations, for example \code{base::difftime()}.
 }
 \examples{
 asDate(getDate());
 
 }
 \seealso{
-Other jam date functions: 
-\code{\link{dateToDaysOld}()},
-\code{\link{getDate}()}
+Other jam date functions:
+\code{\link[=dateToDaysOld]{dateToDaysOld()}},
+\code{\link[=getDate]{getDate()}}
 }
 \concept{jam date functions}

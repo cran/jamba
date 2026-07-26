@@ -195,8 +195,8 @@ setTextContrastColor <- function
 #' convert R color to HCL color matrix
 #'
 #' This function takes an R color and converts to an HCL matrix, using
-#' the colorspace package, and \code{\link[colorspace]{RGB}} and
-#' \code{\link[colorspace]{polarLUV}} functions. It is also used to
+#' the colorspace package, and `colorspace::RGB()` and
+#' `colorspace::polarLUV()` functions. It is also used to
 #' maintain alpha transparency, to enable interconversion via other
 #' color manipulation functions as well.
 #'
@@ -530,7 +530,7 @@ col2alpha <- function
 #' Define the alpha transparency per R color
 #'
 #' @param x R compatible color, either a color name, or hex value, or
-#'    a mixture of the two. Any value compatible with \code{\link[grDevices]{col2rgb}}.
+#'    a mixture of the two. Any value compatible with `grDevices::col2rgb()`.
 #' @param alpha numeric alpha transparency to use per x color. alpha is
 #'    recycled to length(x) as needed.
 #' @param maxValue numeric maximum value to return, useful when the downstream
@@ -636,7 +636,7 @@ hsv2col <- function
 #'
 #' This function takes a valid R color and converts to a HSV matrix. The
 #' output can be effectively returned to R color with
-#' \code{\link{hsv2col}}, usually after manipulating the
+#' `hsv2col()`, usually after manipulating the
 #' HSV color matrix.
 #'
 #' @returns matrix of HSV colors
@@ -673,8 +673,8 @@ col2hsv <- function
 #'
 #' Convert RGB color matrix to R color
 #'
-#' This function intends to augment the \code{\link[grDevices]{rgb}} function, which
-#' does not handle output from \code{\link[grDevices]{col2rgb}}. The goal is to handle
+#' This function intends to augment the `grDevices::rgb()` function, which
+#' does not handle output from `grDevices::col2rgb()`. The goal is to handle
 #' multiple color conversions, e.g. \code{rgb2col(grDevices::col2rgb("red"))}. This
 #' function also maintains alpha transparency when supplied.
 #'
@@ -1009,6 +1009,9 @@ makeColorDarker <- function
    } else {
       fixAlpha <- col2alpha(hexColor);
    }
+   if (length(hexColor) == 0) {
+      return(hexColor);
+   }
 
    ## Optimization step: convert only the unique colors...
    hexColorAll <- hexColor;
@@ -1186,7 +1189,7 @@ makeColorDarker <- function
 #' vector of colors of the appropriate length, suitable as input
 #' to a number of plotting functions.
 #'
-#' When `n` is `NULL`, this function returns a color function,
+#' When `n` is 'NULL', this function returns a color function,
 #' wrapped by `grDevices::colorRampPalette()`. The colors used
 #' are defined by `gradientN`, so the `grDevices::colorRampPalette()`
 #' function actually uses a starting palette of `gradientN` number
@@ -1344,6 +1347,10 @@ makeColorDarker <- function
 #'
 #' @returns `character` vector of R colors, or when N is NULL,
 #'    `function` sufficient to create R colors.
+#'    When returning `character` vector of R colors, it will
+#'    include attribute 'divergent=TRUE' as `logical` value, when
+#'    a divergent color ramp was used, for example "RdBu" or "RdBu_r"
+#'    from RColorBrewer.
 #'
 #' @export
 getColorRamp <- function
@@ -1424,12 +1431,10 @@ getColorRamp <- function
                col);
          }
          brewerN <- RColorBrewer::brewer.pal.info[col, "maxcolors"];
-         if (lens != 0 && length(divergent) == 0) {
-            if ("div" %in% RColorBrewer::brewer.pal.info[col, "category"]) {
-               divergent <- TRUE;
-            } else {
-               divergent <- FALSE;
-            }
+         if ("div" %in% RColorBrewer::brewer.pal.info[col, "category"]) {
+            divergent <- TRUE;
+         } else {
+            divergent <- FALSE;
          }
          colorFunc <- function(n){
             if (n <= brewerN) {
@@ -1573,6 +1578,9 @@ getColorRamp <- function
       }
       if (length(cols) != n) {
          cols <- grDevices::colorRampPalette(cols, alpha=alpha)(n);
+      }
+      if (length(divergent) == 1 && isTRUE(divergent)) {
+         attr(cols, "divergent") <- divergent;
       }
    } else {
       ## Get color function

@@ -77,12 +77,12 @@ character vector of unique names
 make unique vector names
 }
 \details{
-This function extends the basic goal from \code{\link[base]{make.names}}
+This function extends the basic goal from \code{base::make.names()}
 which is intended to make syntactically valid names from a character vector.
 This makeNames function makes names unique, and offers configurable methods
 to handle duplicate names. By default, any duplicated entries receive a
 suffix _v# where # is s running count of entries observed, starting at 1.
-The \code{\link[base]{make.names}} function, by contrast, renames the
+The \code{base::make.names()} function, by contrast, renames the
 second observed entry starting at .1, leaving the original entry
 unchanged. Optionally, makeNames can rename all entries with a numeric
 suffix, for consistency.
@@ -94,15 +94,15 @@ becomes:
 
 Also, makeNames always allows "_".
 
-This makeNames function is similar to \code{\link[base]{make.unique}}
+This makeNames function is similar to \code{base::make.unique()}
 which also converts a vector into a unique vector by adding suffix values,
-however the \code{\link[base]{make.unique}} function intends to allow
+however the \code{base::make.unique()} function intends to allow
 repeated operations which recognize duplicated entries and continually
 increment the suffix number. This makeNames function currently does not
 handle repeat operations. The recommended approach to workaround having
 pre-existing versioned names would be to remove suffix values prior to
 running this function. One small distinction from
-\code{\link[base]{make.unique}} is that makeNames does version the first
+\code{base::make.unique()} is that makeNames does version the first
 entry in a set.
 }
 \examples{
@@ -115,21 +115,21 @@ makeNames(rep(exons, c(2,3,1)), numberStyle="letters", suffix="");
 
 }
 \seealso{
-Other jam string functions: 
-\code{\link{asSize}()},
-\code{\link{breaksByVector}()},
-\code{\link{fillBlanks}()},
-\code{\link{formatInt}()},
-\code{\link{gsubOrdered}()},
-\code{\link{gsubs}()},
-\code{\link{nameVector}()},
-\code{\link{nameVectorN}()},
-\code{\link{padInteger}()},
-\code{\link{padString}()},
-\code{\link{pasteByRow}()},
-\code{\link{pasteByRowOrdered}()},
-\code{\link{sizeAsNum}()},
-\code{\link{tcount}()},
-\code{\link{ucfirst}()}
+Other jam string functions:
+\code{\link[=asSize]{asSize()}},
+\code{\link[=breaksByVector]{breaksByVector()}},
+\code{\link[=fillBlanks]{fillBlanks()}},
+\code{\link[=formatInt]{formatInt()}},
+\code{\link[=gsubOrdered]{gsubOrdered()}},
+\code{\link[=gsubs]{gsubs()}},
+\code{\link[=nameVector]{nameVector()}},
+\code{\link[=nameVectorN]{nameVectorN()}},
+\code{\link[=padInteger]{padInteger()}},
+\code{\link[=padString]{padString()}},
+\code{\link[=pasteByRow]{pasteByRow()}},
+\code{\link[=pasteByRowOrdered]{pasteByRowOrdered()}},
+\code{\link[=sizeAsNum]{sizeAsNum()}},
+\code{\link[=tcount]{tcount()}},
+\code{\link[=ucfirst]{ucfirst()}}
 }
 \concept{jam string functions}

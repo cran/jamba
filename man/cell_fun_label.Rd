@@ -51,7 +51,7 @@ is horizontal.}
 
 \item{sep}{\code{character} string, default \code{"\\n"} newline, used when
 there are multiple labels per cell, which also requires
-\code{m} as a list, and \code{show} is \code{NULL} or has multiple values.}
+\code{m} as a list, and \code{show} is 'NULL' or has multiple values.}
 
 \item{verbose}{\code{logical} indicating whether to print verbose output,
 specifically printing label information for position \verb{(1, 1)}.
@@ -95,7 +95,7 @@ to use \code{gridtext} for custom markdown formatting. That process
 requires a slightly different method.
 }
 \examples{
-\dontshow{if ((check_pkg_installed("ComplexHeatmap"))) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if ((check_pkg_installed("ComplexHeatmap"))) withAutoprint(\{ # examplesIf}
 
 m <- matrix(stats::rnorm(16)*2, ncol=4)
 colnames(m) <- LETTERS[1:4]
@@ -126,8 +126,8 @@ ComplexHeatmap::draw(hm2)
 \dontshow{\}) # examplesIf}
 }
 \seealso{
-Other jam heatmap functions: 
-\code{\link{heatmap_column_order}()},
-\code{\link{heatmap_row_order}()}
+Other jam heatmap functions:
+\code{\link[=heatmap_column_order]{heatmap_column_order()}},
+\code{\link[=heatmap_row_order]{heatmap_row_order()}}
 }
 \concept{jam heatmap functions}

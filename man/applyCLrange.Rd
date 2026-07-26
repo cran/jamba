@@ -19,7 +19,7 @@ applyCLrange(
 \arguments{
 \item{x}{vector of R colors}
 
-\item{lightMode}{\code{NULL} or \code{logical}. When \code{lightMode=NULL} then
+\item{lightMode}{'NULL' or \code{logical}. When \code{lightMode=NULL} then
 \code{Crange} and \code{Lrange} values are used as-is; when \code{lightMode=TRUE}
 or \code{lightMode=FALSE} then default values are used for \code{Crange} and
 \code{Lrange} values, where \code{lightMode=TRUE} is intended for colors
@@ -27,7 +27,7 @@ to have contrast against a light/bright/white background,
 and \code{lightMode=FALSE} is intended for colors to have contrast
 against a dark background.}
 
-\item{Crange}{\code{NULL} or \code{numeric} range with minimum and maximum allowed
+\item{Crange}{'NULL' or \code{numeric} range with minimum and maximum allowed
 values for the chroma (C) component.}
 
 \item{Lrange}{\code{NUL}L or \code{numeric} range with minimum and maximum allowed
@@ -54,7 +54,7 @@ range is equal to \code{Crange}.}
 
 \item{fixup}{\code{logical} passed to \code{hcl2col()} and subsequently
 to \code{colorspace::hex()} when converting colors outside the color
-gamut (visible range.) When \code{fixup} is \code{NULL}, the \code{hcl2col()}
+gamut (visible range.) When \code{fixup} is 'NULL', the \code{hcl2col()}
 method applies its own aggressive technique to restrict the color
 range.}
 
@@ -131,28 +131,28 @@ printDebug(cl, lightMode=TRUE);
 
 }
 \seealso{
-Other jam color functions: 
-\code{\link{alpha2col}()},
-\code{\link{col2alpha}()},
-\code{\link{col2hcl}()},
-\code{\link{col2hsl}()},
-\code{\link{col2hsv}()},
-\code{\link{color2gradient}()},
-\code{\link{fixYellow}()},
-\code{\link{fixYellowHue}()},
-\code{\link{getColorRamp}()},
-\code{\link{hcl2col}()},
-\code{\link{hsl2col}()},
-\code{\link{hsv2col}()},
-\code{\link{isColor}()},
-\code{\link{kable_coloring}()},
-\code{\link{makeColorDarker}()},
-\code{\link{rainbow2}()},
-\code{\link{rgb2col}()},
-\code{\link{setCLranges}()},
-\code{\link{setTextContrastColor}()},
-\code{\link{showColors}()},
-\code{\link{unalpha}()},
-\code{\link{warpRamp}()}
+Other jam color functions:
+\code{\link[=alpha2col]{alpha2col()}},
+\code{\link[=col2alpha]{col2alpha()}},
+\code{\link[=col2hcl]{col2hcl()}},
+\code{\link[=col2hsl]{col2hsl()}},
+\code{\link[=col2hsv]{col2hsv()}},
+\code{\link[=color2gradient]{color2gradient()}},
+\code{\link[=fixYellow]{fixYellow()}},
+\code{\link[=fixYellowHue]{fixYellowHue()}},
+\code{\link[=getColorRamp]{getColorRamp()}},
+\code{\link[=hcl2col]{hcl2col()}},
+\code{\link[=hsl2col]{hsl2col()}},
+\code{\link[=hsv2col]{hsv2col()}},
+\code{\link[=isColor]{isColor()}},
+\code{\link[=kable_coloring]{kable_coloring()}},
+\code{\link[=makeColorDarker]{makeColorDarker()}},
+\code{\link[=rainbow2]{rainbow2()}},
+\code{\link[=rgb2col]{rgb2col()}},
+\code{\link[=setCLranges]{setCLranges()}},
+\code{\link[=setTextContrastColor]{setTextContrastColor()}},
+\code{\link[=showColors]{showColors()}},
+\code{\link[=unalpha]{unalpha()}},
+\code{\link[=warpRamp]{warpRamp()}}
 }
 \concept{jam color functions}

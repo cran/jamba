@@ -12,7 +12,7 @@ jamCalcDensity(x, nbin, bandwidth = NULL, range.x)
 \item{nbin}{\code{integer} number of bins to subdivide the scatterplot,
 expanded to length 2 to accommodate x and y axis bins.}
 
-\item{bandwidth}{\code{numeric} or \code{NULL} representing the bandwidth used
+\item{bandwidth}{\code{numeric} or 'NULL' representing the bandwidth used
 for point density determination.}
 
 \item{range.x}{\code{numeric} vector length 2 representing the range of
@@ -37,10 +37,10 @@ sdim(jamCalcDensity(cbind(x=rnorm(1000) + 4, y=rnorm(1000) + 4), nbin=30))
 
 }
 \seealso{
-Other jam internal functions: 
-\code{\link{handleArgsText}()},
-\code{\link{make_html_styles}()},
-\code{\link{make_styles}()},
-\code{\link{smoothScatterJam}()}
+Other jam internal functions:
+\code{\link[=handleArgsText]{handleArgsText()}},
+\code{\link[=make_html_styles]{make_html_styles()}},
+\code{\link[=make_styles]{make_styles()}},
+\code{\link[=smoothScatterJam]{smoothScatterJam()}}
 }
 \concept{jam internal functions}

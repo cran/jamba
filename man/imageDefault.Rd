@@ -132,14 +132,14 @@ debugging.}
 Display a color raster image
 }
 \details{
-This function augments the \code{\link[graphics]{image}} function, in
+This function augments the \code{graphics::image()} function, in
 that it handles the useRaster parameter for non-symmetric data matrices,
 in order to minimize the distortion from image-smoothing when pixels are
 not square.
 
 The function also by default creates the image map using coordinates where
 each integer represents the center point of one column or row of data,
-known in the default \code{\link[graphics]{image}} function as \code{oldstyle=TRUE}.
+known in the default \code{graphics::image()} function as \code{oldstyle=TRUE}.
 For consistency, \code{imageDefault} will only accept \code{oldstyle=TRUE}.
 }
 \examples{
@@ -147,25 +147,25 @@ ps <- plotSmoothScatter(doTest=TRUE)
 
 }
 \seealso{
-\code{\link[graphics]{image}}
+\code{graphics::image()}
 
-Other jam plot functions: 
-\code{\link{adjustAxisLabelMargins}()},
-\code{\link{coordPresets}()},
-\code{\link{decideMfrow}()},
-\code{\link{drawLabels}()},
-\code{\link{getPlotAspect}()},
-\code{\link{groupedAxis}()},
-\code{\link{imageByColors}()},
-\code{\link{minorLogTicksAxis}()},
-\code{\link{nullPlot}()},
-\code{\link{plotPolygonDensity}()},
-\code{\link{plotRidges}()},
-\code{\link{plotSmoothScatter}()},
-\code{\link{shadowText}()},
-\code{\link{shadowText_options}()},
-\code{\link{showColors}()},
-\code{\link{sqrtAxis}()},
-\code{\link{usrBox}()}
+Other jam plot functions:
+\code{\link[=adjustAxisLabelMargins]{adjustAxisLabelMargins()}},
+\code{\link[=coordPresets]{coordPresets()}},
+\code{\link[=decideMfrow]{decideMfrow()}},
+\code{\link[=drawLabels]{drawLabels()}},
+\code{\link[=getPlotAspect]{getPlotAspect()}},
+\code{\link[=groupedAxis]{groupedAxis()}},
+\code{\link[=imageByColors]{imageByColors()}},
+\code{\link[=minorLogTicksAxis]{minorLogTicksAxis()}},
+\code{\link[=nullPlot]{nullPlot()}},
+\code{\link[=plotPolygonDensity]{plotPolygonDensity()}},
+\code{\link[=plotRidges]{plotRidges()}},
+\code{\link[=plotSmoothScatter]{plotSmoothScatter()}},
+\code{\link[=shadowText]{shadowText()}},
+\code{\link[=shadowText_options]{shadowText_options()}},
+\code{\link[=showColors]{showColors()}},
+\code{\link[=sqrtAxis]{sqrtAxis()}},
+\code{\link[=usrBox]{usrBox()}}
 }
 \concept{jam plot functions}

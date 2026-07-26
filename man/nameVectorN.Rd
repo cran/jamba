@@ -17,7 +17,7 @@ the names(x) are not unique.}
 }
 \value{
 vector of names, whose names are uniquely assigned using
-\code{\link{makeNames}} using the values of the vector.
+\code{makeNames()} using the values of the vector.
 }
 \description{
 define a named vector using vector names
@@ -25,12 +25,12 @@ define a named vector using vector names
 \details{
 This function creates a vector from the names of the input vector,
 then assigns the same as names. The utility is mainly for
-\code{\link[base]{lapply}} functions which maintain the name of a vector
-in its output. The reason to run \code{\link[base]{lapply}} using names
+\code{base::lapply()} functions which maintain the name of a vector
+in its output. The reason to run \code{base::lapply()} using names
 is so the lapply function is operating only on the name and not the
 data it references, which can be convenient when the name of the element
 is useful to known inside the function body. The reason to name the names,
-is so the list object returned by \code{\link[base]{lapply}} is also named
+is so the list object returned by \code{base::lapply()} is also named
 with these same consistent names.
 
 Consider a list of data.frames, each of which represents stats results
@@ -79,21 +79,21 @@ lapply(nameVectorN(K), function(i){
 
 }
 \seealso{
-Other jam string functions: 
-\code{\link{asSize}()},
-\code{\link{breaksByVector}()},
-\code{\link{fillBlanks}()},
-\code{\link{formatInt}()},
-\code{\link{gsubOrdered}()},
-\code{\link{gsubs}()},
-\code{\link{makeNames}()},
-\code{\link{nameVector}()},
-\code{\link{padInteger}()},
-\code{\link{padString}()},
-\code{\link{pasteByRow}()},
-\code{\link{pasteByRowOrdered}()},
-\code{\link{sizeAsNum}()},
-\code{\link{tcount}()},
-\code{\link{ucfirst}()}
+Other jam string functions:
+\code{\link[=asSize]{asSize()}},
+\code{\link[=breaksByVector]{breaksByVector()}},
+\code{\link[=fillBlanks]{fillBlanks()}},
+\code{\link[=formatInt]{formatInt()}},
+\code{\link[=gsubOrdered]{gsubOrdered()}},
+\code{\link[=gsubs]{gsubs()}},
+\code{\link[=makeNames]{makeNames()}},
+\code{\link[=nameVector]{nameVector()}},
+\code{\link[=padInteger]{padInteger()}},
+\code{\link[=padString]{padString()}},
+\code{\link[=pasteByRow]{pasteByRow()}},
+\code{\link[=pasteByRowOrdered]{pasteByRowOrdered()}},
+\code{\link[=sizeAsNum]{sizeAsNum()}},
+\code{\link[=tcount]{tcount()}},
+\code{\link[=ucfirst]{ucfirst()}}
 }
 \concept{jam string functions}

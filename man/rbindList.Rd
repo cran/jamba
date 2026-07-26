@@ -26,7 +26,7 @@ whenever a blank cell is introduced into the resulting matrix}
 
 \item{nullValue}{optional value used to replace NULL entries in
 the input list, useful especially when the data was produced
-by \code{strsplit()} with \code{""}. Use \code{nullValue=""} to replace \code{NULL}
+by \code{strsplit()} with \code{""}. Use \code{nullValue=""} to replace 'NULL'
 with \code{""} and preserve the original list length. Otherwise when
 \code{nullValue=NULL} any empty entries will be silently dropped.}
 
@@ -86,18 +86,18 @@ rbindList(L, returnDF=TRUE);
 
 }
 \seealso{
-Other jam list functions: 
-\code{\link{cPaste}()},
-\code{\link{heads}()},
-\code{\link{jam_rapply}()},
-\code{\link{list2df}()},
-\code{\link{mergeAllXY}()},
-\code{\link{mixedSorts}()},
-\code{\link{relist_named}()},
-\code{\link{rlengths}()},
-\code{\link{sclass}()},
-\code{\link{sdim}()},
-\code{\link{uniques}()},
-\code{\link{unnestList}()}
+Other jam list functions:
+\code{\link[=cPaste]{cPaste()}},
+\code{\link[=heads]{heads()}},
+\code{\link[=jam_rapply]{jam_rapply()}},
+\code{\link[=list2df]{list2df()}},
+\code{\link[=mergeAllXY]{mergeAllXY()}},
+\code{\link[=mixedSorts]{mixedSorts()}},
+\code{\link[=relist_named]{relist_named()}},
+\code{\link[=rlengths]{rlengths()}},
+\code{\link[=sclass]{sclass()}},
+\code{\link[=sdim]{sdim()}},
+\code{\link[=uniques]{uniques()}},
+\code{\link[=unnestList]{unnestList()}}
 }
 \concept{jam list functions}

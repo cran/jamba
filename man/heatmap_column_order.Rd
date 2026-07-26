@@ -11,7 +11,7 @@ heatmap_column_order(hm, which_heatmap = NULL)
 Bioconductor package via \code{ComplexHeatmap::Heatmap()}.}
 
 \item{which_heatmap}{used to specify a specific heatmap with \code{hm} is
-provided as a \code{HeatmapList}. When \code{NULL} (default) the first heatmap
+provided as a \code{HeatmapList}. When 'NULL' (default) the first heatmap
 in \code{hm@ht_list} is used. When one value is supplied, only that heatmap
 is used. When multiple values are supplied, a \code{list} is returned.
 Input can be either:
@@ -127,8 +127,8 @@ if (check_pkg_installed("ComplexHeatmap")) {
 
 }
 \seealso{
-Other jam heatmap functions: 
-\code{\link{cell_fun_label}()},
-\code{\link{heatmap_row_order}()}
+Other jam heatmap functions:
+\code{\link[=cell_fun_label]{cell_fun_label()}},
+\code{\link[=heatmap_row_order]{heatmap_row_order()}}
 }
 \concept{jam heatmap functions}

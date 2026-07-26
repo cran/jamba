@@ -87,7 +87,7 @@ to define a specific color for the cell text.
 }
 \examples{
 # write to tempfile for examples
-if (check_pkg_installed("openxlsx")) {
+\dontrun{
    out_xlsx <- tempfile(pattern="writeOpenxlsx_", fileext=".xlsx")
    df <- data.frame(a=LETTERS[1:5], b=1:5);
    writeOpenxlsx(x=df,
@@ -105,11 +105,11 @@ if (check_pkg_installed("openxlsx")) {
 
 }
 \seealso{
-Other jam export functions: 
-\code{\link{applyXlsxConditionalFormat}()},
-\code{\link{readOpenxlsx}()},
-\code{\link{set_xlsx_colwidths}()},
-\code{\link{set_xlsx_rowheights}()},
-\code{\link{writeOpenxlsx}()}
+Other jam export functions:
+\code{\link[=applyXlsxConditionalFormat]{applyXlsxConditionalFormat()}},
+\code{\link[=readOpenxlsx]{readOpenxlsx()}},
+\code{\link[=set_xlsx_colwidths]{set_xlsx_colwidths()}},
+\code{\link[=set_xlsx_rowheights]{set_xlsx_rowheights()}},
+\code{\link[=writeOpenxlsx]{writeOpenxlsx()}}
 }
 \concept{jam export functions}

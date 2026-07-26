@@ -47,7 +47,7 @@ hung and needs to be stopped directly.}
 \item{resetPrompt}{\code{logical} whether to revert all changes to the prompt
 back to the default R prompt, that is, no color and no projectName.}
 
-\item{addEscape}{\code{logical} or \code{NULL} indicating whether to wrap color
+\item{addEscape}{\code{logical} or 'NULL' indicating whether to wrap color
 encoding ANSI inside additional escape sequences. This change is
 helpful for linux-based (readline-based) R consoles, by telling
 the console not to count ANSI color control characters as visible
@@ -57,7 +57,7 @@ If you find that the word-wrap is incorrect in the R console, try
 \code{addEscape=TRUE}. Apparently most versions of RStudio will already
 adjust (and prevent) colorizing the prompt during editing, presumably
 to sidestep the problem of calculating the correct character length.
-By default when \code{addEscape} is \code{NULL}, it checks whether environmental
+By default when \code{addEscape} is 'NULL', it checks whether environmental
 variable \code{RSTUDIO} equals \code{"1"} (running inside RStudio) then sets
 \code{addEscape=FALSE}; otherwise it defines \code{addEscape=TRUE}.
 In most cases for commandline prompts, \code{addEscape=TRUE} is helpful
@@ -170,30 +170,31 @@ setPrompt(resetPrompt=TRUE);
 
 }
 \seealso{
-Other jam practical functions: 
-\code{\link{breakDensity}()},
-\code{\link{call_fn_ellipsis}()},
-\code{\link{checkLightMode}()},
-\code{\link{check_pkg_installed}()},
-\code{\link{colNum2excelName}()},
-\code{\link{color_dither}()},
-\code{\link{exp2signed}()},
-\code{\link{getAxisLabel}()},
-\code{\link{isFALSEV}()},
-\code{\link{isTRUEV}()},
-\code{\link{jargs}()},
-\code{\link{kable_coloring}()},
-\code{\link{lldf}()},
-\code{\link{log2signed}()},
-\code{\link{middle}()},
-\code{\link{minorLogTicks}()},
-\code{\link{newestFile}()},
-\code{\link{printDebug}()},
-\code{\link{reload_rmarkdown_cache}()},
-\code{\link{renameColumn}()},
-\code{\link{rmInfinite}()},
-\code{\link{rmNA}()},
-\code{\link{rmNAs}()},
-\code{\link{rmNULL}()}
+Other jam practical functions:
+\code{\link[=breakDensity]{breakDensity()}},
+\code{\link[=call_fn_ellipsis]{call_fn_ellipsis()}},
+\code{\link[=checkLightMode]{checkLightMode()}},
+\code{\link[=check_pkg_installed]{check_pkg_installed()}},
+\code{\link[=colNum2excelName]{colNum2excelName()}},
+\code{\link[=color_dither]{color_dither()}},
+\code{\link[=exp2signed]{exp2signed()}},
+\code{\link[=getAxisLabel]{getAxisLabel()}},
+\code{\link[=isFALSEV]{isFALSEV()}},
+\code{\link[=isTRUEV]{isTRUEV()}},
+\code{\link[=jargs]{jargs()}},
+\code{\link[=kable_coloring]{kable_coloring()}},
+\code{\link[=lldf]{lldf()}},
+\code{\link[=log2signed]{log2signed()}},
+\code{\link[=middle]{middle()}},
+\code{\link[=minorLogTicks]{minorLogTicks()}},
+\code{\link[=newestFile]{newestFile()}},
+\code{\link[=printDebug]{printDebug()}},
+\code{\link[=reload_qmd_cache]{reload_qmd_cache()}},
+\code{\link[=reload_rmarkdown_cache]{reload_rmarkdown_cache()}},
+\code{\link[=renameColumn]{renameColumn()}},
+\code{\link[=rmInfinite]{rmInfinite()}},
+\code{\link[=rmNA]{rmNA()}},
+\code{\link[=rmNAs]{rmNAs()}},
+\code{\link[=rmNULL]{rmNULL()}}
 }
 \concept{jam practical functions}

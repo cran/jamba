@@ -16,11 +16,11 @@ usrBox(
 \item{fill}{\code{character} R color used to fill the background of the plot}
 
 \item{label}{\code{character} text optionally used to label the center of the
-plot space, default \code{NULL}}
+plot space, default 'NULL'}
 
 \item{parUsr}{\code{numeric} vector length 4, indicating the R plot space,
 consistent with \code{graphics::par("usr")}. It can thus be used to define a
-different area, though using the \code{\link[graphics]{rect}} function
+different area, though using the \code{graphics::rect()} function
 directly seems more appropriate.}
 
 \item{debug}{\code{logical} whether to print the parUsr value being used.}
@@ -41,33 +41,33 @@ can be useful to indicate the active plot area while allowing pre-drawn
 plot elements to be shown, or can be useful precursor to provide a colored
 background for the plot.
 
-The plot space is defined using \code{graphics::par("usr")} and therefore requires
-an active R device is already opened.
+The plot space is defined using 'graphics::par("usr")'
+and therefore requires an active R device is already opened.
 }
 \examples{
-# usrBox() requires that a plot device is already open
+# usrBox requires that a plot device is already open
 nullPlot(doBoxes=FALSE);
 usrBox();
 
 }
 \seealso{
-Other jam plot functions: 
-\code{\link{adjustAxisLabelMargins}()},
-\code{\link{coordPresets}()},
-\code{\link{decideMfrow}()},
-\code{\link{drawLabels}()},
-\code{\link{getPlotAspect}()},
-\code{\link{groupedAxis}()},
-\code{\link{imageByColors}()},
-\code{\link{imageDefault}()},
-\code{\link{minorLogTicksAxis}()},
-\code{\link{nullPlot}()},
-\code{\link{plotPolygonDensity}()},
-\code{\link{plotRidges}()},
-\code{\link{plotSmoothScatter}()},
-\code{\link{shadowText}()},
-\code{\link{shadowText_options}()},
-\code{\link{showColors}()},
-\code{\link{sqrtAxis}()}
+Other jam plot functions:
+\code{\link[=adjustAxisLabelMargins]{adjustAxisLabelMargins()}},
+\code{\link[=coordPresets]{coordPresets()}},
+\code{\link[=decideMfrow]{decideMfrow()}},
+\code{\link[=drawLabels]{drawLabels()}},
+\code{\link[=getPlotAspect]{getPlotAspect()}},
+\code{\link[=groupedAxis]{groupedAxis()}},
+\code{\link[=imageByColors]{imageByColors()}},
+\code{\link[=imageDefault]{imageDefault()}},
+\code{\link[=minorLogTicksAxis]{minorLogTicksAxis()}},
+\code{\link[=nullPlot]{nullPlot()}},
+\code{\link[=plotPolygonDensity]{plotPolygonDensity()}},
+\code{\link[=plotRidges]{plotRidges()}},
+\code{\link[=plotSmoothScatter]{plotSmoothScatter()}},
+\code{\link[=shadowText]{shadowText()}},
+\code{\link[=shadowText_options]{shadowText_options()}},
+\code{\link[=showColors]{showColors()}},
+\code{\link[=sqrtAxis]{sqrtAxis()}}
 }
 \concept{jam plot functions}

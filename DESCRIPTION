@@ -1,6 +1,6 @@
 Package: jamba
 Title: Just Analysis Methods Base
-Version: 1.0.4
+Version: 1.0.5
 Authors@R: c(
     person(given="James M.",
        family="Ward",
@@ -22,18 +22,18 @@ Imports: methods, grDevices, graphics, stats, utils, colorspace,
 Suggests: crayon, farver, knitr, rmarkdown, testthat (>= 3.0.0)
 Enhances: ggplot2, ggridges, IRanges, S4Vectors, openxlsx, kableExtra,
         matrixStats, viridisLite, ComplexHeatmap, circlize,
-        GenomicRanges, igraph, pryr, rstudioapi, Matrix,
-        sparseMatrixStats
+        GenomicRanges, igraph, rstudioapi, Matrix, sparseMatrixStats
 License: MIT + file LICENSE
 Encoding: UTF-8
 URL: https://jmw86069.github.io/jamba/
 BugReports: https://github.com/jmw86069/jamba/issues
 VignetteBuilder: knitr
-RoxygenNote: 7.3.2
 Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0.9000
 NeedsCompilation: no
-Packaged: 2025-03-23 06:31:56 UTC; wardjm
-Author: James M. Ward [aut, cre, cph] (<https://orcid.org/0000-0002-9510-2848>)
+Packaged: 2026-07-26 17:13:57 UTC; James.Ward
+Author: James M. Ward [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-9510-2848>)
 Maintainer: James M. Ward <jmw86069@gmail.com>
 Repository: CRAN
-Date/Publication: 2025-03-23 16:30:02 UTC
+Date/Publication: 2026-07-26 21:00:10 UTC

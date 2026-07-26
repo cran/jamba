@@ -35,10 +35,10 @@ assign unique names for a vector
 }
 \details{
 This function assigns unique names to a vector, if necessary it runs
-\code{\link{makeNames}} to create unique names. It differs from
-\code{\link[stats]{setNames}} in that it ensures names are unique,
+\code{makeNames()} to create unique names. It differs from
+\code{stats::setNames()} in that it ensures names are unique,
 and when no names are supplied, it uses the vector itself to define
-names. It is helpful to run this function inside an \code{\link[base]{lapply}}
+names. It is helpful to run this function inside an \code{base::lapply()}
 function call, which by default maintains names, but does not assign
 names if the input data did not already have them.
 
@@ -68,21 +68,21 @@ nameVector(V, df);
 
 }
 \seealso{
-Other jam string functions: 
-\code{\link{asSize}()},
-\code{\link{breaksByVector}()},
-\code{\link{fillBlanks}()},
-\code{\link{formatInt}()},
-\code{\link{gsubOrdered}()},
-\code{\link{gsubs}()},
-\code{\link{makeNames}()},
-\code{\link{nameVectorN}()},
-\code{\link{padInteger}()},
-\code{\link{padString}()},
-\code{\link{pasteByRow}()},
-\code{\link{pasteByRowOrdered}()},
-\code{\link{sizeAsNum}()},
-\code{\link{tcount}()},
-\code{\link{ucfirst}()}
+Other jam string functions:
+\code{\link[=asSize]{asSize()}},
+\code{\link[=breaksByVector]{breaksByVector()}},
+\code{\link[=fillBlanks]{fillBlanks()}},
+\code{\link[=formatInt]{formatInt()}},
+\code{\link[=gsubOrdered]{gsubOrdered()}},
+\code{\link[=gsubs]{gsubs()}},
+\code{\link[=makeNames]{makeNames()}},
+\code{\link[=nameVectorN]{nameVectorN()}},
+\code{\link[=padInteger]{padInteger()}},
+\code{\link[=padString]{padString()}},
+\code{\link[=pasteByRow]{pasteByRow()}},
+\code{\link[=pasteByRowOrdered]{pasteByRowOrdered()}},
+\code{\link[=sizeAsNum]{sizeAsNum()}},
+\code{\link[=tcount]{tcount()}},
+\code{\link[=ucfirst]{ucfirst()}}
 }
 \concept{jam string functions}

@@ -35,15 +35,15 @@ imageByColors(
 \arguments{
 \item{x}{\code{matrix} or \code{data.frame} containing colors}
 
-\item{useRaster}{\code{logical} sent to \code{\link{imageDefault}} to enable
+\item{useRaster}{\code{logical} sent to \code{imageDefault()} to enable
 raster rendering, as opposed to polygon rendering. This parameter is
 highly recommended when the matrix is large (>50 columns or rows).}
 
-\item{fixRasterRatio}{\code{logical} sent to \code{\link{imageDefault}}.}
+\item{fixRasterRatio}{\code{logical} sent to \code{imageDefault()}.}
 
-\item{maxRatioFix}{\code{numeric} sent to \code{\link{imageDefault}}.}
+\item{maxRatioFix}{\code{numeric} sent to \code{imageDefault()}.}
 
-\item{xaxt, yaxt}{\code{character} values compatible with \code{\link[graphics]{par}} to
+\item{xaxt, yaxt}{\code{character} values compatible with \code{graphics::par()} to
 determine whether x- and y-axes are plotted. Set both to "n" to
 suppress display of axes.}
 
@@ -53,7 +53,7 @@ would have been used to create the plot.}
 \item{cellnote}{\code{matrix} or \code{data.frame} of labels to be displayed on the
 image. If groupCellnotes==TRUE labels will be placed in the center
 of consecutive cells with the same label and identical color.
-Currently, cell text is colored using \code{\link{setTextContrastColor}}
+Currently, cell text is colored using \code{setTextContrastColor()}
 which uses either white or black depending upon the brightness of
 the background color.}
 
@@ -148,9 +148,9 @@ an image visualization.
 Display color raster image using a matrix of colors
 }
 \details{
-This function is similar to \code{\link[graphics]{image}} except that
+This function is similar to \code{graphics::image()} except that
 it takes a matrix which already has colors defined for each cell.
-This function calls \code{\link{imageDefault}} which enables updated
+This function calls \code{imageDefault()} which enables updated
 use of the \code{useRaster} functionality.
 
 Additionally, if \code{cellnote} is supplied, which contains a matrix
@@ -207,23 +207,23 @@ imageByColors(df1, cellnote=df1, useRaster=TRUE, adjBy="column",
    srtCellnote=list(c(90,0,0), c(0,45), c(0,0,0), c(0,90,0)));
 }
 \seealso{
-Other jam plot functions: 
-\code{\link{adjustAxisLabelMargins}()},
-\code{\link{coordPresets}()},
-\code{\link{decideMfrow}()},
-\code{\link{drawLabels}()},
-\code{\link{getPlotAspect}()},
-\code{\link{groupedAxis}()},
-\code{\link{imageDefault}()},
-\code{\link{minorLogTicksAxis}()},
-\code{\link{nullPlot}()},
-\code{\link{plotPolygonDensity}()},
-\code{\link{plotRidges}()},
-\code{\link{plotSmoothScatter}()},
-\code{\link{shadowText}()},
-\code{\link{shadowText_options}()},
-\code{\link{showColors}()},
-\code{\link{sqrtAxis}()},
-\code{\link{usrBox}()}
+Other jam plot functions:
+\code{\link[=adjustAxisLabelMargins]{adjustAxisLabelMargins()}},
+\code{\link[=coordPresets]{coordPresets()}},
+\code{\link[=decideMfrow]{decideMfrow()}},
+\code{\link[=drawLabels]{drawLabels()}},
+\code{\link[=getPlotAspect]{getPlotAspect()}},
+\code{\link[=groupedAxis]{groupedAxis()}},
+\code{\link[=imageDefault]{imageDefault()}},
+\code{\link[=minorLogTicksAxis]{minorLogTicksAxis()}},
+\code{\link[=nullPlot]{nullPlot()}},
+\code{\link[=plotPolygonDensity]{plotPolygonDensity()}},
+\code{\link[=plotRidges]{plotRidges()}},
+\code{\link[=plotSmoothScatter]{plotSmoothScatter()}},
+\code{\link[=shadowText]{shadowText()}},
+\code{\link[=shadowText_options]{shadowText_options()}},
+\code{\link[=showColors]{showColors()}},
+\code{\link[=sqrtAxis]{sqrtAxis()}},
+\code{\link[=usrBox]{usrBox()}}
 }
 \concept{jam plot functions}

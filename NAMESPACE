@@ -103,6 +103,7 @@ export(rainbow2)
 export(rbindList)
 export(readOpenxlsx)
 export(relist_named)
+export(reload_qmd_cache)
 export(reload_rmarkdown_cache)
 export(renameColumn)
 export(rgb2col)
@@ -144,5 +145,7 @@ export(warpAroundZero)
 export(warpRamp)
 export(writeOpenxlsx)
 importFrom(methods,as)
-importFrom(utils,head)
-importFrom(utils,tail)
+importFrom(utils,
+  head,
+  tail
+)

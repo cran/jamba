@@ -67,7 +67,7 @@ individual points.}
 \item{transformation}{\code{function} which converts point density to a number,
 typically related to square root or cube root transformation.}
 
-\item{postPlotHook}{\code{function} or \code{NULL}, NULL default.
+\item{postPlotHook}{\code{function} or 'NULL', NULL default.
 When \code{function} is supplied, it is called after producing the image.
 By default it is simply used to draw a box around the image,
 but could be used to layer additional information atop the image plot,
@@ -102,7 +102,7 @@ by other mechanisms, e.g. log-scaled x-axis tick marks.}
 for suppressing the y-axis, in order to produce a custom y-axis
 by other mechanisms, e.g. log-scaled y-axis tick marks.}
 
-\item{useRaster}{\code{NULL} or \code{logical} indicating whether to invoke
+\item{useRaster}{'NULL' or \code{logical} indicating whether to invoke
 \code{graphics::rasterImage()} to produce a raster image.
 If NULL, it determines whether to produce a raster image within the
 \code{imageDefault()} function, which checks the options
@@ -144,10 +144,10 @@ smoothScatterJam(x=x1, y=y1, bandwidth=c(0.05, 0.3))
 \seealso{
 \code{graphics::smoothScatter()}
 
-Other jam internal functions: 
-\code{\link{handleArgsText}()},
-\code{\link{jamCalcDensity}()},
-\code{\link{make_html_styles}()},
-\code{\link{make_styles}()}
+Other jam internal functions:
+\code{\link[=handleArgsText]{handleArgsText()}},
+\code{\link[=jamCalcDensity]{jamCalcDensity()}},
+\code{\link[=make_html_styles]{make_html_styles()}},
+\code{\link[=make_styles]{make_styles()}}
 }
 \concept{jam internal functions}

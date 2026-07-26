@@ -11,7 +11,7 @@ jargs(
   useMessage = TRUE,
   asList = TRUE,
   useColor = TRUE,
-  lightMode = NULL,
+  lightMode = getOption("jam.lightMode"),
   Crange = getOption("jam.Crange"),
   Lrange = getOption("jam.Lrange"),
   adjustRgb = getOption("jam.adjustRgb"),
@@ -24,7 +24,7 @@ jargs(
 \arguments{
 \item{x}{\code{function} or character name of a function.}
 
-\item{grepString}{\code{NULL}, \code{logical}, or \code{character} grep regular expression
+\item{grepString}{'NULL', \code{logical}, or \code{character} grep regular expression
 pattern used to filter function arguments by name. Very useful to
 search a function for arguments with a substring \code{"row"}.
 \itemize{
@@ -51,7 +51,7 @@ display results as a \code{data.frame}.}
 \item{useColor}{\code{logical} whether to display results in color, if the crayon
 package is available, and terminal console is capable.}
 
-\item{lightMode}{\code{logical} or \code{NULL}, indicating whether the text background
+\item{lightMode}{\code{logical} or 'NULL', indicating whether the text background
 color is light, thus imposing a maximum brightness for colors displayed.
 It use lightMode if defined by the function caller, otherwise it will
 use \code{getOption("jam.lightMode")} if defined, lastly it will attempt to
@@ -83,7 +83,7 @@ output, useful because parameters are hard!}
 \item{...}{Additional arguments are installed.}
 }
 \value{
-\code{NULL} this function called for the byproduct of printing
+'NULL' this function called for the byproduct of printing
 its output.
 }
 \description{
@@ -129,30 +129,31 @@ jargs(imageByColors, "note")
 
 }
 \seealso{
-Other jam practical functions: 
-\code{\link{breakDensity}()},
-\code{\link{call_fn_ellipsis}()},
-\code{\link{checkLightMode}()},
-\code{\link{check_pkg_installed}()},
-\code{\link{colNum2excelName}()},
-\code{\link{color_dither}()},
-\code{\link{exp2signed}()},
-\code{\link{getAxisLabel}()},
-\code{\link{isFALSEV}()},
-\code{\link{isTRUEV}()},
-\code{\link{kable_coloring}()},
-\code{\link{lldf}()},
-\code{\link{log2signed}()},
-\code{\link{middle}()},
-\code{\link{minorLogTicks}()},
-\code{\link{newestFile}()},
-\code{\link{printDebug}()},
-\code{\link{reload_rmarkdown_cache}()},
-\code{\link{renameColumn}()},
-\code{\link{rmInfinite}()},
-\code{\link{rmNA}()},
-\code{\link{rmNAs}()},
-\code{\link{rmNULL}()},
-\code{\link{setPrompt}()}
+Other jam practical functions:
+\code{\link[=breakDensity]{breakDensity()}},
+\code{\link[=call_fn_ellipsis]{call_fn_ellipsis()}},
+\code{\link[=checkLightMode]{checkLightMode()}},
+\code{\link[=check_pkg_installed]{check_pkg_installed()}},
+\code{\link[=colNum2excelName]{colNum2excelName()}},
+\code{\link[=color_dither]{color_dither()}},
+\code{\link[=exp2signed]{exp2signed()}},
+\code{\link[=getAxisLabel]{getAxisLabel()}},
+\code{\link[=isFALSEV]{isFALSEV()}},
+\code{\link[=isTRUEV]{isTRUEV()}},
+\code{\link[=kable_coloring]{kable_coloring()}},
+\code{\link[=lldf]{lldf()}},
+\code{\link[=log2signed]{log2signed()}},
+\code{\link[=middle]{middle()}},
+\code{\link[=minorLogTicks]{minorLogTicks()}},
+\code{\link[=newestFile]{newestFile()}},
+\code{\link[=printDebug]{printDebug()}},
+\code{\link[=reload_qmd_cache]{reload_qmd_cache()}},
+\code{\link[=reload_rmarkdown_cache]{reload_rmarkdown_cache()}},
+\code{\link[=renameColumn]{renameColumn()}},
+\code{\link[=rmInfinite]{rmInfinite()}},
+\code{\link[=rmNA]{rmNA()}},
+\code{\link[=rmNAs]{rmNAs()}},
+\code{\link[=rmNULL]{rmNULL()}},
+\code{\link[=setPrompt]{setPrompt()}}
 }
 \concept{jam practical functions}
